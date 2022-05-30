@@ -1748,9 +1748,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.cbfd0700.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.cd02aa19.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.311803bb.css"}},
+    cdn: {"js":{"app":"/js/app.cbfd0700.js","parallax":"/blog/js/plugins/parallax.8bf0ab10.js","rightMenu":"/blog/js/plugins/rightMenu.d9437285.js","rightMenus":"/blog/js/plugins/rightMenus.cd02aa19.js","sites":"/blog/js/plugins/tags/sites.76bf19b8.js","friends":"/blog/js/plugins/tags/friends.f372da57.js","contributors":"/blog/js/plugins/tags/contributors.aec80453.js","search":"/blog/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.311803bb.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1649552113628/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1649552113628/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1649552113628/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1649552113628/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1653905803463),
+    lastupdate: new Date(1653906110984),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2191,7 +2191,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		<div class="nav-main">
       
         
-        <a class="title flat-box" target="_self" href='/'>
+        <a class="title flat-box" target="_self" href='/blog/'>
           
             <img no-lazy class='logo' src='https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/Logo-NavBar@3x.png'/>
           
@@ -2209,11 +2209,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/" title="博客"
+                href="/blog/" title="博客"
                   
                   
                   
-                    active-action="action-home"
+                    active-action="action-blog"
                   >
                   <i class='fa-solid fa-rss fa-fw'></i>博客
                 </a>
@@ -2226,11 +2226,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/categories/" title="分类"
+                href="/blog/categories/" title="分类"
                   
                   
                   
-                    active-action="action-categories"
+                    active-action="action-blogcategories"
                   >
                   <i class='fa-solid fa-folder-open fa-fw'></i>分类
                 </a>
@@ -2243,11 +2243,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/tags/" title="标签"
+                href="/blog/tags/" title="标签"
                   
                   
                   
-                    active-action="action-tags"
+                    active-action="action-blogtags"
                   >
                   <i class='fa-solid fa-tags fa-fw'></i>标签
                 </a>
@@ -2260,11 +2260,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/archives/" title="归档"
+                href="/blog/archives/" title="归档"
                   
                   
                   
-                    active-action="action-archives"
+                    active-action="action-blogarchives"
                   >
                   <i class='fa-solid fa-archive fa-fw'></i>归档
                 </a>
@@ -2277,11 +2277,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/friends/" title="友链"
+                href="/blog/friends/" title="友链"
                   
                   
                   
-                    active-action="action-friends"
+                    active-action="action-blogfriends"
                   >
                   <i class='fa-solid fa-link fa-fw'></i>友链
                 </a>
@@ -2294,11 +2294,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/about/" title="关于"
+                href="/blog/about/" title="关于"
                   
                   
                   
-                    active-action="action-about"
+                    active-action="action-blogabout"
                   >
                   <i class='fa-solid fa-info-circle fa-fw'></i>关于
                 </a>
@@ -2330,11 +2330,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/" title="博客"
+                href="/blog/" title="博客"
                   
                   
                   
-                    active-action="action-home"
+                    active-action="action-blog"
                   >
                   <i class='fa-solid fa-rss fa-fw'></i>博客
                 </a>
@@ -2347,11 +2347,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/categories/" title="分类"
+                href="/blog/categories/" title="分类"
                   
                   
                   
-                    active-action="action-categories"
+                    active-action="action-blogcategories"
                   >
                   <i class='fa-solid fa-folder-open fa-fw'></i>分类
                 </a>
@@ -2364,11 +2364,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/tags/" title="标签"
+                href="/blog/tags/" title="标签"
                   
                   
                   
-                    active-action="action-tags"
+                    active-action="action-blogtags"
                   >
                   <i class='fa-solid fa-tags fa-fw'></i>标签
                 </a>
@@ -2381,11 +2381,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/archives/" title="归档"
+                href="/blog/archives/" title="归档"
                   
                   
                   
-                    active-action="action-archives"
+                    active-action="action-blogarchives"
                   >
                   <i class='fa-solid fa-archive fa-fw'></i>归档
                 </a>
@@ -2398,11 +2398,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/friends/" title="友链"
+                href="/blog/friends/" title="友链"
                   
                   
                   
-                    active-action="action-friends"
+                    active-action="action-blogfriends"
                   >
                   <i class='fa-solid fa-link fa-fw'></i>友链
                 </a>
@@ -2415,11 +2415,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/about/" title="关于"
+                href="/blog/about/" title="关于"
                   
                   
                   
-                    active-action="action-about"
+                    active-action="action-blogabout"
                   >
                   <i class='fa-solid fa-info-circle fa-fw'></i>关于
                 </a>
@@ -2462,38 +2462,38 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div class='list-h'>
         
           
-            <a href="/v4/getting-started/"
+            <a href="/blog/v4/getting-started/"
               
               
-              active-action="action-v4getting-started">
+              active-action="action-blogv4getting-started">
               <img src='https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f5c3.svg'><p>文档</p>
             </a>
           
-            <a href="/faqs/"
+            <a href="/blog/faqs/"
               
               
-              active-action="action-faqs">
+              active-action="action-blogfaqs">
               <img src='https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f516.svg'><p>帮助</p>
             </a>
           
-            <a href="/examples/"
+            <a href="/blog/examples/"
               
               
-              active-action="action-examples">
+              active-action="action-blogexamples">
               <img src='https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f396.svg'><p>示例</p>
             </a>
           
-            <a href="/contributors/"
+            <a href="/blog/contributors/"
               
               
-              active-action="action-contributors">
+              active-action="action-blogcontributors">
               <img src='https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f389.svg'><p>社区</p>
             </a>
           
-            <a href="/archives/"
+            <a href="/blog/archives/"
               
               
-              active-action="action-archives">
+              active-action="action-blogarchives">
               <img src='https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f4f0.svg'><p>博客</p>
             </a>
           
@@ -3177,15 +3177,15 @@ start-yarn.sh
   
     <div class="prev-next">
       
-        <a class='prev' href='/2022/05/29/hello-world/'>
+        <a class='prev' href='/blog/2022/05/29/hello-world/'>
           <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Hello World</p>
           <p class='content'>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any ...</p>
         </a>
       
       
-        <a class='next' href='/2022/05/22/spark3/'>
-          <p class='title'>《Spark HA & Yarn配置》<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>《Spark HA &amp; Yarn配置》Spark-Standalone-HA模式Spark Standalone集群是Master-Slaves架构的集群模式,和大部分的Master-S...</p>
+        <a class='next' href='/blog/2022/05/22/spark2/'>
+          <p class='title'>《spark基础环境配置》<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>《spark基础环境配置》打开一个hosts映射文件,为了保证后续相互关联的虚拟机能够通过主机名进行访问，根据实际需求配置对应的IP和主机名映射，分别将主机名master、slave1、slav...</p>
         </a>
       
     </div>
@@ -3201,7 +3201,7 @@ start-yarn.sh
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2022/05/22/spark1/index.html#comments">
+      <meta itemprop="discussionUrl" content="/blog/2022/05/22/spark1/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -3385,7 +3385,7 @@ start-yarn.sh
 
 <!-- internal -->
 
-<script src="/js/app.cbfd0700.js"></script>
+<script src="/blog/js/app.cbfd0700.js"></script>
 
 
 
@@ -3632,7 +3632,7 @@ start-yarn.sh
 
   </ul>
 </div>
-<script src="/js/plugins/rightMenus.cd02aa19.js"></script>
+<script src="/blog/js/plugins/rightMenus.cd02aa19.js"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -3753,19 +3753,19 @@ start-yarn.sh
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/tags/sites.76bf19b8.js")
+        volantis.js("/blog/js/plugins/tags/sites.76bf19b8.js")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/tags/friends.f372da57.js")
+        volantis.js("/blog/js/plugins/tags/friends.f372da57.js")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/tags/contributors.aec80453.js")
+        volantis.js("/blog/js/plugins/tags/contributors.aec80453.js")
       }
     
   };
@@ -3912,14 +3912,14 @@ start-yarn.sh
 <!-- optional -->
 
   <script>
-  const SearchServiceDataPathRoot = ("/" || "/").endsWith("/") ?
-    "/" || "/" :
-    "//" || "/";
+  const SearchServiceDataPathRoot = ("/blog/" || "/").endsWith("/") ?
+    "/blog/" || "/" :
+    "/blog//" || "/";
   const SearchServiceDataPath = SearchServiceDataPathRoot + "content.json";
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.0e52f222.js");
+    return volantis.js("/blog/js/search/hexo.0e52f222.js");
   }
 
   function loadSearchService() {
@@ -4241,7 +4241,7 @@ start-yarn.sh
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"https://wlp194800105.github.io/wlpblog.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"WLP","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wlp194800105.github.io/wlpblog.github.io/","sameAs":["https://github.com/volantis-x"],"description":"This is wlp194800105_blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://wlp194800105.github.io/wlpblog.github.io/","name":"Hexo"}},{"@type":"ListItem","position":3,"item":{"@id":"https://wlp194800105.github.io/wlpblog.github.io/2022/05/22/spark1/","name":"《Spark local& stand-alone配置》"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"https://wlp194800105.github.io/wlpblog.github.io/","keywords":null,"description":"This is wlp194800105_blog","author":{"@type":"Person","name":"WLP","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wlp194800105.github.io/wlpblog.github.io/","description":"This is wlp194800105_blog"},"publisher":{"@type":"Organization","name":"Hexo","url":"https://wlp194800105.github.io/wlpblog.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://wlp194800105.github.io/wlpblog.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"《Spark local& stand-alone配置》","description":"This is wlp194800105_blog","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://wlp194800105.github.io/wlpblog.github.io/2022/05/22/spark1/"},"author":{"@type":"Person","name":"WLP","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wlp194800105.github.io/wlpblog.github.io/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://wlp194800105.github.io/wlpblog.github.io/2022/05/22/spark1/","wordCount":0,"datePublished":"2022-05-22T08:18:57.000Z","dateModified":"2022-05-22T08:18:57.000Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"https://wlp194800105.github.io/wlpblog.github.io/blog/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"WLP","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wlp194800105.github.io/wlpblog.github.io/blog/","sameAs":["https://github.com/volantis-x"],"description":"This is wlp194800105_blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://wlp194800105.github.io/wlpblog.github.io/blog/","name":"Hexo"}},{"@type":"ListItem","position":3,"item":{"@id":"https://wlp194800105.github.io/wlpblog.github.io/blog/2022/05/22/spark1/","name":"《Spark local& stand-alone配置》"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"https://wlp194800105.github.io/wlpblog.github.io/blog/","keywords":null,"description":"This is wlp194800105_blog","author":{"@type":"Person","name":"WLP","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wlp194800105.github.io/wlpblog.github.io/blog/","description":"This is wlp194800105_blog"},"publisher":{"@type":"Organization","name":"Hexo","url":"https://wlp194800105.github.io/wlpblog.github.io/blog/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://wlp194800105.github.io/wlpblog.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"《Spark local& stand-alone配置》","description":"This is wlp194800105_blog","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://wlp194800105.github.io/wlpblog.github.io/2022/05/22/spark1/"},"author":{"@type":"Person","name":"WLP","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wlp194800105.github.io/wlpblog.github.io/blog/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://wlp194800105.github.io/wlpblog.github.io/2022/05/22/spark1/","wordCount":0,"datePublished":"2022-05-22T08:18:57.000Z","dateModified":"2022-05-22T08:18:57.000Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
