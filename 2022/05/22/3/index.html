@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://example.com/2022/05/22/spark1/"/>
+  <link rel="canonical" href="http://example.com/2022/05/22/3/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -31,15 +31,15 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>《Spark local& stand-alone配置》 - Hexo</title>
+  <title>《Spark HA & Yarn配置》 - Hexo</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="This is wlp194800105_blog - WLP - Hexo">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="《Spark local&amp; stand-alone配置》">
-<meta property="og:url" content="http://example.com/2022/05/22/spark1/index.html">
+<meta property="og:title" content="《Spark HA &amp; Yarn配置》">
+<meta property="og:url" content="http://example.com/2022/05/22/3/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Spark-Standalone-HA模式Spark Standalone集群是Master-Slaves架构的集群模式,和大部分的Master-Slaves结构集群一样,存在着Master 单点故障(SPOF)的问题。简单理解为，spark-Standalone 模式下为 master 节点控制其他节点，当 master 节点出现故障时，集群就不可用了。 spark-Standalone-HA">
+<meta property="og:description" content="《Spark HA &amp; Yarn配置》Spark-Standalone-HA模式Spark Standalone集群是Master-Slaves架构的集群模式,和大部分的Master-Slaves结构集群一样,存在着Master 单点故障(SPOF)的问题。简单理解为，spark-Standalone 模式下为 master 节点控制其他节点，当 master 节点出现故障时，集群就不可用">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-05-22T08:18:57.000Z">
@@ -1750,7 +1750,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.cbfd0700.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.cd02aa19.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.311803bb.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1649552113628/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1649552113628/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1649552113628/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1649552113628/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1653909255205),
+    lastupdate: new Date(1655519759339),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2521,7 +2521,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/22/spark1/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/22/3/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Hexo">
   </span>
@@ -2542,7 +2542,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        《Spark local& stand-alone配置》
+        《Spark HA & Yarn配置》
       </h1>
       <div class='new-meta-box'>
         
@@ -2599,7 +2599,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>Spark-Standalone-HA模式<br>Spark Standalone集群是Master-Slaves架构的集群模式,和大部分的Master-Slaves结构集群一样,存在<br>着Master 单点故障(SPOF)的问题。简单理解为，spark-Standalone 模式下为 master 节点控制其他节<br>点，当 master 节点出现故障时，集群就不可用了。 spark-Standalone-HA 模式下<br>master 节点不固定，当一个宕机时，立即换另一台为 master 保障不出现故障。<br>此处因为先前配置时的 zookeeper 版本和 spark 版本不太兼容，导致此模式有故障，需要重新下<br>载配置新的版本的 zookeeper<br>配置之前需要删除三台主机的 旧版 zookeeper 以及 对应的软连接<br>在 master 节点上重新进行前面配置的 zookeeper 操作</p>
+    <h1 id="《Spark-HA-amp-Yarn配置》"><a href="#《Spark-HA-amp-Yarn配置》" class="headerlink" title="《Spark HA &amp; Yarn配置》"></a>《Spark HA &amp; Yarn配置》</h1><p>Spark-Standalone-HA模式<br>Spark Standalone集群是Master-Slaves架构的集群模式,和大部分的Master-Slaves结构集群一样,存在<br>着Master 单点故障(SPOF)的问题。简单理解为，spark-Standalone 模式下为 master 节点控制其他节<br>点，当 master 节点出现故障时，集群就不可用了。 spark-Standalone-HA 模式下<br>master 节点不固定，当一个宕机时，立即换另一台为 master 保障不出现故障。<br>此处因为先前配置时的 zookeeper 版本和 spark 版本不太兼容，导致此模式有故障，需要重新下<br>载配置新的版本的 zookeeper<br>配置之前需要删除三台主机的 旧版 zookeeper 以及 对应的软连接<br>在 master 节点上重新进行前面配置的 zookeeper 操作</p>
 <blockquote>
 <blockquote>
 <blockquote>
@@ -2797,271 +2797,6 @@ scp spark-env.sh slave2:/export/server/spark/conf/
 </blockquote>
 </blockquote>
 </blockquote>
-</details>
-
-
-
-
-<hr>
-<p>title: ‘《Spark local&amp; stand-alone配置》’<br>toc: false<br>comments: true<br>keywords: ‘’<br>description: ‘’<br>date: 2022-05-22 16:18:57<br>updated: 2022-05-22 16:18:57<br>categories:<br>tags:<br>top:<br>academia: true</p>
-<hr>
-<h1 id="《Spark-local-amp-stand-alone配置》"><a href="#《Spark-local-amp-stand-alone配置》" class="headerlink" title="《Spark local&amp; stand-alone配置》"></a>《Spark local&amp; stand-alone配置》</h1><details>
-<summary>阅读全文</summary>
-
-<p>**<summary>本地模式(单机) 本地模式就是以一个独立的进程,通过其内部的多个线程来模拟整个Spark运行时环境<br>Anaconda On Linux 安装 (单台服务器脚本安装)<br>安装上传安装包: 资料中提供的Anaconda3-2021.05-Linux-x86_64.sh文件到Linux服务器上安装<br>位置在 &#x2F;export&#x2F;server:</p>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<p>   cd &#x2F;export&#x2F;server<br>   #运行文件 sh Anaconda3-2021.05-Linux-x86_64.sh<br>   过程显示：<br>   …<br>   #出现内容选 yes Please answer ‘yes’ or ‘no’:’ &gt;&gt;&gt; yes …<br>   #出现添加路径：&#x2F;export&#x2F;server&#x2F;anaconda3<br>   …<br>   [&#x2F;root&#x2F;anaconda3] </p>
-<blockquote>
-</blockquote>
-<p>   &#x2F;export&#x2F;server&#x2F;anaconda3 PREFIX&#x3D;&#x2F;export&#x2F;server&#x2F;anaconda3<br>   …</p>
-</blockquote>
-</blockquote>
-<p>安装完成后, 退出终端， 重新进来:</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>exit<br>   结果显示：<br>   #看到这个Base开头表明安装好了.base是默认的虚拟环境. Last login: Tue Mar 15 15:28:59 2022 from 192.168.88.1 (base)<br>   [root@node1 ~]#</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>创建虚拟环境 pyspark 基于 python3.8</p>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<p>   conda create -n pyspark python&#x3D;3.8</p>
-</blockquote>
-</blockquote>
-<p>切换到虚拟环境内</p>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<p>   conda activate pyspark 结果显示： (base) [root@node1 ~]# conda activate pyspark (pyspark) [root@node1 ~]#</p>
-</blockquote>
-</blockquote>
-<p>在虚拟环境内安装包 （有WARNING不用管）</p>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<p>   pip install pyhive pyspark jieba -i <a target="_blank" rel="noopener" href="https://pypi.tuna.tsinghua.edu.cn/simple">https://pypi.tuna.tsinghua.edu.cn/simple</a></p>
-</blockquote>
-</blockquote>
-<p>spark 安装<br>将文件上传到 &#x2F;export&#x2F;server 里面 ，解压</p>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<p>   cd &#x2F;export&#x2F;server # 解压 tar -zxvf spark-3.2.0-bin-hadoop3.2.tgz -C &#x2F;export&#x2F;server&#x2F;</p>
-</blockquote>
-</blockquote>
-<p>建立软连接</p>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<p>   ln -s &#x2F;export&#x2F;server&#x2F;spark-3.2.0-bin-hadoop3.2 &#x2F;export&#x2F;server&#x2F;spark</p>
-</blockquote>
-</blockquote>
-<p>添加环境变量</p>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<p>   SPARK_HOME: 表示Spark安装路径在哪里<br>   PYSPARK_PYTHON: 表示Spark想运行Python程序, 那么去哪里找python执行器<br>   JAVA_HOME: 告知Spark Java在哪里<br>   HADOOP_CONF_DIR: 告知Spark Hadoop的配置文件在哪里<br>   HADOOP_HOME: 告知Spark Hadoop安装在哪里</p>
-</blockquote>
-</blockquote>
-<p>   vim &#x2F;etc&#x2F;profile<br>   内容：<br>   …..<br>   注：此部分之前配置过，此部分不需要在配置<br>   #JAVA_HOME export JAVA_HOME&#x3D;&#x2F;export&#x2F;server&#x2F;jdk1.8.0_241 export PATH&#x3D;$PATH:$JAVA_HOME&#x2F;bin export CLASSPATH&#x3D;.:$JAVA_HOME&#x2F;lib&#x2F;dt.jar:$JAVA_HOME&#x2F;lib&#x2F;tools.jar </p>
-<p>   #HADOOP_HOME export HADOOP_HOME&#x3D;&#x2F;export&#x2F;server&#x2F;hadoop-3.3.0 export PATH&#x3D;$PATH:$HADOOP_HOME&#x2F;bin:$HADOOP_HOME&#x2F;sbin </p>
-<p>   #ZOOKEEPER_HOME export ZOOKEEPER_HOME&#x3D;&#x2F;export&#x2F;server&#x2F;zookeeper export PATH&#x3D;$PATH:$ZOOKEEPER_HOME&#x2F;bin ….. </p>
-<p>   #将以下部分添加进去 #SPARK_HOME export SPARK_HOME&#x3D;&#x2F;export&#x2F;server&#x2F;spark #HADOOP_CONF_DIR export HADOOP_CONF_DIR&#x3D;$HADOOP_HOME&#x2F;etc&#x2F;hadoop #PYSPARK_PYTHON export PYSPARK_PYTHON&#x3D;&#x2F;export&#x2F;server&#x2F;anaconda3&#x2F;envs&#x2F;pyspark&#x2F;bin&#x2F;python<br>   vim .bashrc<br>   内容添加进去： </p>
-<p>   #JAVA_HOME<br>   export JAVA_HOME&#x3D;&#x2F;export&#x2F;server&#x2F;jdk1.8.0_241<br>   #PYSPARK_PYTHON<br>   export PYSPARK_PYTHON&#x3D;&#x2F;export&#x2F;server&#x2F;anaconda3&#x2F;envs&#x2F;pyspark&#x2F;bin&#x2F;python</p>
-<p>重新加载环境变量文件</p>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<p>   source &#x2F;etc&#x2F;profile<br>   source ~&#x2F;.bashrc</p>
-</blockquote>
-</blockquote>
-<p>进入 &#x2F;export&#x2F;server&#x2F;anaconda3&#x2F;envs&#x2F;pyspark&#x2F;bin&#x2F; 文件夹</p>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<p>   cd &#x2F;export&#x2F;server&#x2F;anaconda3&#x2F;envs&#x2F;pyspark&#x2F;bin&#x2F;</p>
-</blockquote>
-</blockquote>
-<p>开启 </p>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<p>  .&#x2F;pyspark 结果显示： (base) [root@master bin]# .&#x2F;pyspark<br>   Python 3.8.12 (default, Oct 12 2021, 13:49:34) [GCC 7.5.0] :: Anaconda, Inc. on linux<br>   Type “help”, “copyright”, “credits” or “license” for more information.<br>   Setting default log level to “WARN”. To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel). 2022-03-15 20:37:04,612 WARN util.NativeCodeLoader: Unable to load native- hadoop library for your platform… using builtin-java classes where applicable<br>    Welcome to<br>         __              __<br>    __ &#x2F; <strong>&#x2F;</strong> ___ _<em><em><strong>&#x2F; &#x2F;</strong><br>     <em>\ / _ / _ &#96;&#x2F; _<em>&#x2F; ‘</em>&#x2F;<br>     &#x2F;_</em> &#x2F; .</em><em>&#x2F;_,</em>&#x2F;</em>&#x2F; &#x2F;<em>&#x2F;_\ version 3.2.0<br>        &#x2F;</em>&#x2F;<br>    Using Python version 3.8.12 (default, Oct 12 2021 13:49:34) Spark context Web UI available at <a target="_blank" rel="noopener" href="http://master:4040/">http://master:4040</a> Spark context available as ‘sc’ (master &#x3D; local[*], app id &#x3D; local- 1647347826262). SparkSession available as ‘spark’. &gt;&gt;&gt;</p>
-</blockquote>
-</blockquote>
-<p>查看WebUI界面</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>浏览器访问：<br>    <a target="_blank" rel="noopener" href="http://node1:4040/">http://node1:4040/</a></p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>退出</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>conda deactivate</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>Standalone模式(集群) Spark中的各个角色以独立进程的形式存在,并组成Spark集群环境 Anaconda On Linux 安装 (单台服务器脚本安装 注：在 slave1 和 slave2 上部署)<br>安装上传安装包: 资料中提供的Anaconda3-2021.05-Linux-x86_64.sh文件到Linux服务器上安装位置在 &#x2F;export&#x2F;server:</p>
-<p>cd &#x2F;export&#x2F;server # 运行文件 sh Anaconda3-2021.05-Linux-x86_64.sh</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>过程显示：<br> …<br> #出现内容选 yes<br>  Please answer ‘yes’ or ‘no’:’<br>yes<br>   …<br>   #出现添加路径：&#x2F;export&#x2F;server&#x2F;anaconda3<br>   …<br>   [&#x2F;root&#x2F;anaconda3] &gt;&gt;&gt; &#x2F;export&#x2F;server&#x2F;anaconda3 PREFIX&#x3D;&#x2F;export&#x2F;server&#x2F;anaconda3<br>   …</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>安装完成后, 退出终端，</p>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<p>  重新进来:<br>  exit<br>  结果显示：<br>   #看到这个Base开头表明安装好了.base是默认的虚拟环境.<br>    Last login: Tue Mar 15 15:28:59 2022 from 192.168.88.1<br>   …</p>
-</blockquote>
-</blockquote>
-<p>在 master 节点上把 .&#x2F;bashrc 和 profile 分发给 slave1 和 slave2</p>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<p>   #分发 .bashrc : scp <del>&#x2F;.bashrc root@slave1:</del>&#x2F; scp <del>&#x2F;.bashrc root@slave2:</del>&#x2F; #分发 profile : scp &#x2F;etc&#x2F;profile&#x2F; root@slave1:&#x2F;etc&#x2F; scp &#x2F;etc&#x2F;profile&#x2F; root@slave2:&#x2F;etc&#x2F;<br>   …</p>
-</blockquote>
-</blockquote>
-<p>创建虚拟环境 pyspark 基于 python3.8</p>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<p>   conda create -n pyspark python&#x3D;3.8</p>
-</blockquote>
-</blockquote>
-<p>切换到虚拟环境内</p>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<p>   conda activate pyspark 结果显示： (base) [root@node1 ~]# conda activate pyspark (pyspark)<br>在虚拟环境内安装包 （有WARNING不用管）<br>    pip install pyhive pyspark jieba -i <a target="_blank" rel="noopener" href="https://pypi.tuna.tsinghua.edu.cn/simple">https://pypi.tuna.tsinghua.edu.cn/simple</a><br>    spark 安装<br>将文件上传到 &#x2F;export&#x2F;server 里面 ，解压</p>
-</blockquote>
-</blockquote>
-<p>master 节点节点进入 &#x2F;export&#x2F;server&#x2F;spark&#x2F;conf 修改以下配置文件</p>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<p>   cd &#x2F;export&#x2F;server&#x2F;spark&#x2F;conf</p>
-</blockquote>
-</blockquote>
-<p>将文件 workers.template 改名为 workers，并配置文件内容</p>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<p>   mv workers.template workers vim workers<br>    # localhost删除，内容追加文末： node1<br>    node2<br>    node3<br>    # 功能: 这个文件就是指示了 当前SparkStandAlone环境下, 有哪些worker</p>
-</blockquote>
-</blockquote>
-<p>将文件 spark-env.sh.template 改名为 spark-env.sh，并配置相关内容</p>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<p>   mv spark-env.sh.template spark-env.sh vim spark-env.sh</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>文末追加内容：<br>   ##设置JAVA安装目录 JAVA_HOME&#x3D;&#x2F;export&#x2F;server&#x2F;jdk<br>   ##HADOOP软件配置文件目录，读取HDFS上文件和运行YARN集群 HADOOP_CONF_DIR&#x3D;&#x2F;export&#x2F;server&#x2F;hadoop&#x2F;etc&#x2F;hadoop YARN_CONF_DIR&#x3D;&#x2F;export&#x2F;server&#x2F;hadoop&#x2F;etc&#x2F;hadoop ## 指定spark老大Master的IP和提交任务的通信端口 # 告知Spark的master运行在哪个机器上 export SPARK_MASTER_HOST&#x3D;master<br>    #告知sparkmaster的通讯端口 export SPARK_MASTER_PORT&#x3D;7077<br>    # 告知spark master的 webui端口 SPARK_MASTER_WEBUI_PORT&#x3D;8080<br>    # worker cpu可用核数 SPARK_WORKER_CORES&#x3D;1<br>    # worker可用内存 SPARK_WORKER_MEMORY&#x3D;1g<br>    # worker的工作通讯地址 SPARK_WORKER_PORT&#x3D;7078<br>    # worker的 webui地址 SPARK_WORKER_WEBUI_PORT&#x3D;8081<br>    ## 设置历史服务器 # 配置的意思是 将spark程序运行的历史日志 存到hdfs的&#x2F;sparklog文件夹中 SPARK_HISTORY_OPTS&#x3D;”- Dspark.history.fs.logDirectory&#x3D;hdfs:&#x2F;&#x2F;master:8020&#x2F;sparklog&#x2F; - Dspark.history.fs.cleaner.enabled&#x3D;true”</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>开启 hadoop 的 hdfs 和 yarn 集群</p>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<pre><code>start-dfs.sh 
-start-yarn.sh
-</code></pre>
-<p>在HDFS上创建程序运行历史记录存放的文件夹，同样 conf 文件目录下:</p>
-<blockquote>
-</blockquote>
-<p>   hadoop fs -mkdir &#x2F;sparklog hadoop fs -chmod 777 &#x2F;sparklog</p>
-</blockquote>
-</blockquote>
-<p>将 spark-defaults.conf.template 改为 spark-defaults.conf 并做相关配置</p>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<p>   mv spark-defaults.conf.template spark-defaults.conf vim spark-defaults.conf 文末追加内容为： # 开启spark的日期记录功能 spark.eventLog.enabled true # 设置spark日志记录的路径 spark.eventLog.dir hdfs:&#x2F;&#x2F;master:8020&#x2F;sparklog&#x2F; # 设置spark日志是否启动压缩 spark.eventLog.compress true</p>
-</blockquote>
-</blockquote>
-<p>配置 log4j.properties 文件 将文件第 19 行的 log4j.rootCategory&#x3D;INFO, console 改为<br>log4j.rootCategory&#x3D;WARN, console （即将INFO 改为 WARN 目的：输出日志, 设置级别为<br>WARN 只输出警告和错误日志，INFO 则为输出所有信息，多数为无用信息）</p>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<p>   mv log4j.properties.template log4j.properties vim log4j.properties 结果显示：<br>    …<br>    18 # Set everything to be logged to the console<br>    19 log4j.rootCategory&#x3D;WARN, console ….</p>
-</blockquote>
-</blockquote>
-<p>master 节点分发 spark 安装文件夹 到 slave1 和 slave2 上</p>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<p>   master 节点分发 spark 安装文件夹 到 slave1 和 slave2 上</p>
-</blockquote>
-</blockquote>
-<p>在slave1 和 slave2 上做软连接</p>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<p>   ln -s &#x2F;export&#x2F;server&#x2F;spark-3.2.0-bin-hadoop3.2 &#x2F;export&#x2F;server&#x2F;spark</p>
-</blockquote>
-</blockquote>
-<p>重新加载环境变量</p>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<p>   source &#x2F;etc&#x2F;profile</p>
-</blockquote>
-</blockquote>
-<p>进入 &#x2F;export&#x2F;server&#x2F;spark&#x2F;sbin 文件目录下 启动 start-history-server.sh</p>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<p>   cd &#x2F;export&#x2F;server&#x2F;spark&#x2F;sbin .&#x2F;start-history-server.sh</p>
-</blockquote>
-</blockquote>
-<p>访问 WebUI 界面</p>
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-<p>   浏览器访问： <a target="_blank" rel="noopener" href="http://master:18080/">http://master:18080/</a></p>
-</blockquote>
-</blockquote>
 
 
   </div>
@@ -3081,7 +2816,7 @@ start-yarn.sh
               
             
               
-                <p>本文永久链接是：<a href=http://example.com/2022/05/22/spark1/>http://example.com/2022/05/22/spark1/</a></p>
+                <p>本文永久链接是：<a href=http://example.com/2022/05/22/3/>http://example.com/2022/05/22/3/</a></p>
               
             
           </blockquote>
@@ -3120,7 +2855,7 @@ start-yarn.sh
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2022/05/22/spark1/&title=《Spark local& stand-alone配置》 - Hexo&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2022/05/22/3/&title=《Spark HA & Yarn配置》 - Hexo&summary="
           
           >
           
@@ -3132,7 +2867,7 @@ start-yarn.sh
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2022/05/22/spark1/&title=《Spark local& stand-alone配置》 - Hexo&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2022/05/22/3/&title=《Spark HA & Yarn配置》 - Hexo&summary="
           
           >
           
@@ -3144,7 +2879,7 @@ start-yarn.sh
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2022/05/22/spark1/&title=《Spark local& stand-alone配置》 - Hexo&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2022/05/22/3/&title=《Spark HA & Yarn配置》 - Hexo&summary="
           
           >
           
@@ -3177,16 +2912,11 @@ start-yarn.sh
   
     <div class="prev-next">
       
-        <a class='prev' href='/2022/05/29/hello-world/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Hello World</p>
-          <p class='content'>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any ...</p>
-        </a>
-      
-      
-        <a class='next' href='/2022/05/22/spark2/'>
-          <p class='title'>《spark基础环境配置》<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+        <a class='prev' href='/2022/05/22/2/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>《spark基础环境配置》</p>
           <p class='content'>《spark基础环境配置》打开一个hosts映射文件,为了保证后续相互关联的虚拟机能够通过主机名进行访问，根据实际需求配置对应的IP和主机名映射，分别将主机名master、slave1、slav...</p>
         </a>
+      
       
     </div>
   
@@ -3201,7 +2931,7 @@ start-yarn.sh
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2022/05/22/spark1/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2022/05/22/3/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -4241,7 +3971,7 @@ start-yarn.sh
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"WLP","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"This is wlp194800105_blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Hexo"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2022/05/22/spark1/","name":"《Spark local& stand-alone配置》"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"http://example.com/","keywords":null,"description":"This is wlp194800105_blog","author":{"@type":"Person","name":"WLP","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"This is wlp194800105_blog"},"publisher":{"@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"《Spark local& stand-alone配置》","description":"This is wlp194800105_blog","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2022/05/22/spark1/"},"author":{"@type":"Person","name":"WLP","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2022/05/22/spark1/","wordCount":0,"datePublished":"2022-05-22T08:18:57.000Z","dateModified":"2022-05-22T08:18:57.000Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"WLP","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"This is wlp194800105_blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Hexo"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2022/05/22/3/","name":"《Spark HA & Yarn配置》"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"http://example.com/","keywords":null,"description":"This is wlp194800105_blog","author":{"@type":"Person","name":"WLP","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"This is wlp194800105_blog"},"publisher":{"@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"《Spark HA & Yarn配置》","description":"This is wlp194800105_blog","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2022/05/22/3/"},"author":{"@type":"Person","name":"WLP","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2022/05/22/3/","wordCount":0,"datePublished":"2022-05-22T08:18:57.000Z","dateModified":"2022-05-22T08:18:57.000Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
